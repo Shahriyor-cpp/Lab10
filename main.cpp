@@ -156,3 +156,52 @@ int main() {
     }
     cout<<endl;
 }
+
+
+//#8
+
+//I dont know about randomly generating numbers and didnt want to copy from chatgpt
+
+//#9
+
+void reverseArray(int arr[], int start, int end) {
+    while (start<end) {
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    int arr[]={7,0,8,5,3,89};
+    int size= sizeof(arr)/sizeof(arr[0]);
+    reverseArray(arr,0,size-1);
+    for(int i=0,i<size;i++){
+        cout<<arr[i]<<" ";
+        cout<<endl;
+    }    
+}
+
+//#10
+
+void sort(int arr[],int n) {
+    bool s =true;
+    for(int i=1;i<n;i++){
+        if(arr[i]>arr[i+1]){
+            s=false;
+            break;
+        }
+    }
+    if(sorted){
+        cout<<"Yes"<<endl;
+    }else{
+        cout<<"No"<<endl;
+    }
+}
+int main(){
+    int arr[]={1,2,4,6,7,8};
+    int n = sizeof(arr)/sizeof(arr[n]);
+    sort(arr,n);
+}
